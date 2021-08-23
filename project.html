@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<script src="tata.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+    *{
+        font-family: cairo;
+        font-weight: bold;
+        }
+</style>
+    <title>Grocery List</title>
+</head>
+<body style="background-image: url(GettyImages-1128949343.jpg);background-size: cover;">
+<div class="container-fluid p-3">
+<div class="row  justify-content-center">
+    <div class="card bg-info text-center col-lg-6 col-md-12">
+        <h5 class="card-header">Add New Grocery Item</h5>
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <form action=""><!--form to take text value and submit it to list -->
+            <input autocomplete="off" type="text" id="description" class="form-control text-center">
+            <a  onclick="addToDo()" class="btn btn-success btn-lg mt-5">Add Item
+                <i class="fa fa-plus-circle"></i>
+            </a>
+        </form>
+        </div>
+      </div>    
+    </div>
+    </div>
+ 
+        <div class="container ">
+            <div class="row  justify-content-center ">
+                <div class="card bg-dark text-center col-xl-6 col-md-6 col-sm-12  mt-4">
+                    <h5 class="card-header text-white">Grocery Items</h5>
+                    <div class="card-body">
+                        <a  onclick="removeItems()" class="btn btn-danger btn-lg mt-1 mb-4">Clear
+                            <i class="fa fa-plus-trash"></i>
+                        </a>
+                        
+                        <table class="table table-dark table-striped  table-bordered">
+                        <thead>
+                        </thead>
+                        <tbody class="tbody-items">
+                </tbody>
+                    </table>
+                    </div>
+                  </div>
+                </div>
+        </div>
+
+    </div>
+    <!-- display items-->
+    <script src="app.js"></script>
+</body>
+</html>
